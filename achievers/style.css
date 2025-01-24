@@ -142,7 +142,6 @@ form button:hover {
 .content {
     flex: 1;
     margin-left: 20px;
-    background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -152,7 +151,6 @@ form button:hover {
     margin-bottom: 15px;
     color: #333;
 }
-
 .compare-table {
     width: 90%;
     max-width: 1000px;
@@ -215,7 +213,6 @@ form button:hover {
     background-color: #218838;
 }
 
-
 .newsletter {
     background-color: #e8f8f5;
     padding: 20px;
@@ -244,7 +241,7 @@ form button:hover {
 }
 
 .newsletter button:hover {
-    background-color: #218838;
+    background-color: #173b1f;
 }
 
 footer {
@@ -252,9 +249,10 @@ footer {
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
     text-align: center;
+    
 }
 
-.footer-top {
+.footer-top{
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;
@@ -272,9 +270,15 @@ footer {
 .footer-top p {
     margin-bottom: 5px;
 }
-
+.payments img {
+    width: 150px;
+}
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
 .social-icons i {
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
