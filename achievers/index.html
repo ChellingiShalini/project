@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
+    <!--header starts here-->
     <header>
         <div class="logo">
             <img src="https://lms.achieversit.com/assets/images/logo.png" alt="Achievers IT Logo">
@@ -18,7 +21,7 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="Account.html">My Account</a></li>
                 <li><a href="compare.html">Compare</a></li>
-                <li><a href="form.html">Login</a></li>   
+                <li><a href="form.html">Login</a></li>
             </ul>
         </nav>
         <div class="searchbar">
@@ -26,14 +29,574 @@
             <i class="fa fa-search"></i>
         </div>
         <div class="icons">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <div class="icon-container">
+                <i class="fa-regular fa-heart"></i>
+                <div class="notification"> 3 </div>
+            </div>
+            <div class="icon-container">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="notification">3</div>
+            </div>
         </div>
     </header>
+    <!-- header ends here-->
+
+    <section class="picture">
+        <div class="matter">
+            <h5>Hot Promotions</h5>
+            <h4>Fashion Trending</h4>
+            <h3>Great Collection</h3>
+            <p>Save more with coupons & upto 20% off</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="pic">
+            <img src="../Assets/home-img.png" alt="promotion img">
+        </div>
+    </section>
+    <section class="arrows">
+        <div class="diff">
+            <h5 id="h5">Popular</h5>
+            <h5>Categories</h5>
+        </div>
+        <div class="buttons">
+            <a href=""><button>
+                    < </button></a>
+            <a href=""><button> > </button></a>
+        </div>
+
+    </section>
+    <section class="popular">
+        <div class="categories">
+            <img src="../Assets/category-1.jpg" alt="">
+            <div class="product-info">
+                <p>T-Shirts</p>
+            </div>
+        </div>
+        <div class="categories">
+            <img src="../Assets/category-2.jpg" alt="">
+            <div class="product-info">
+                <p>Bags</p>
+            </div>
+        </div>
+        <div class="categories">
+            <img src="../Assets/category-3.jpg" alt="">
+            <div class="product-info">
+                <p>Sandal</p>
+            </div>
+        </div>
+        <div class="categories">
+            <img src="../Assets/category-4.jpg" alt="">
+            <div class="product-info">
+                <p>Scarf Cap</p>
+            </div>
+        </div>
+        <div class="categories">
+            <img src="../Assets/product-6-1.jpg" alt="">
+            <div class="product-info">
+                <p>Shoes</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="styles">
+        <p id="p1">Featured</p>
+        <p id="p2">Popular</p>
+        <p id="p3">New Added</p>
+    </div>
+
+    <section class="products">
+        <div class="products-cards">
+            <div class="product-box" id="hot1">Hot</div>
+            <div class="product-img">
+                <img class="front-image" src="../Assets/category-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-1-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Clothing</p>
+                <h4>Colorful Pattern Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$238.85</span>
+                    <span class="original-price">$245.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot2">Hot</div>
+            <div class="product-img">
+                <img class="front-image" src="../Assets/product-2-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-2-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Clothing</p>
+                <h4>Colorful Pattern Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$340.85</span>
+                    <span class="original-price">$250.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot3">-25%</div>
+
+            <div class="product-img">
+                <img class="front-image" src="../Assets/product-3-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-3-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Shoes</p>
+                <h4>Footewear</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$500.02</span>
+                    <span class="original-price">$300.5</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot4">-30%</div>
+
+            <div class="product-img">
+                <img class="front-image" src="../Assets/product-4-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-4-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>plazoo pants</p>
+                <h4>Women Fashions</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$450.08</span>
+                    <span class="original-price">$256.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot5">-27%</div>
+
+            <div class="product-img">
+                <img class="front-image" src="../Assets/category-4.jpg" alt="">
+                <img class="back-image" src="../Assets/category-4.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>scraf</p>
+                <h4>head scarfs</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$250.85</span>
+                    <span class="original-price">$200.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot6">Hot</div>
+            <div class="product-img">
+                <img class="front-image" src="../Assets/product-7-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-7-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Tops</p>
+                <h4>womens clothing</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$238.85</span>
+                    <span class="original-price">$245.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot7">-32%</div>
+            <div class="product-img">
+                <img class="front-image" src="../Assets/category-6.jpg" alt="">
+                <img class="back-image" src="../Assets/category-6.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Pillows</p>
+                <h4>Bed Accessories</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$238.85</span>
+                    <span class="original-price">$245.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products-cards">
+            <div class="product-box" id="hot8">Hot</div>
+
+            <div class="product-img">
+                <img class="front-image" src="../Assets/product-8-1.jpg" alt="">
+                <img class="back-image" src="../Assets/product-8-2.jpg" alt="">
+                <div class="eye-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="product-info">
+                <p>Clothing</p>
+                <h4>Colorful Pattern Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$600</span>
+                    <span class="original-price">$499</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="boxcard">
+            <img src="../Assets/deals-1.jpg" alt="">
+            <div class="date1">
+                <h4>Deals of the Day</h4>
+                <p>Limited quantities</p>
+                <h5>Summer Collection New <br>Modern Design</h5>
+                <span class="price">$139.00 <del>$160.99</del></span>
+                <p>Hurry Up! Offer Ends In:</p>
+                <div class="timer">
+                    <div class="days">
+                        <p class="time">02</p>
+                        <p class="name">days</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">22</p>
+                        <p class="name">Hours</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">57</p>
+                        <p class="name">Min</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">28</p>
+                        <p class="name">Sec</p>
+                    </div>
+                </div>
+                <p class="shop1">Shop Now</p>
+            </div>
+        </div>
+        <div class="boxcard">
+            <img src="../Assets/deals-2.png" alt="">
+            <div class="date1">
+                <h4>Women Clothing</h4>
+                <p>Shirts & Bag</p>
+                <h5>Try Something new on <br>vacation</h5>
+                <span class="price">$178.00 <del>$256.99</del></span>
+                <p>Hurry Up! Offer Ends In:</p>
+                <div class="timer">
+                    <div class="days">
+                        <p class="time">02</p>
+                        <p class="name">days</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">22</p>
+                        <p class="name">Hours</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">57</p>
+                        <p class="name">Min</p>
+                    </div>
+                    <div class="colon">:</div>
+                    <div class="days">
+                        <p class="time">28</p>
+                        <p class="name">Sec</p>
+                    </div>
+                </div>
+                <p class="shop1">Shop Now</p>
+            </div>
+        </div>
+    </section>
+    <section class="arrows">
+        <div class="diff">
+            <h5 id="h5">New</h5>
+            <h5>Arrivals</h5>
+        </div>
+        <div class="buttons">
+            <a href=""><button>
+                    < </button></a>
+            <a href=""><button> > </button></a>
+        </div>
+
+    </section>
+    <section class="productbottom">
+        <div class="products4">
+            <div class="productcat" id="hot9">Hot</div>
+            <img src="../Assets/category-1.jpg" alt="">
+            <div class="product-info">
+                <p>Clothing</p>
+                <h4>Colorful Pattern Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$238.85</span>
+                    <span class="original-price">$245.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products4">
+            <div class="productcat" id="hot10">Hot</div>
+            <img src="../Assets/product-2-1.jpg" alt="">
+            <div class="product-info">
+                <p>Shirts</p>
+                <h4>Colorful Pattern Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$400.05</span>
+                    <span class="original-price">$245.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products4">
+            <div class="productcat" id="h11">Hot</div>
+            <img src="../Assets/product-3-1.jpg" alt="">
+            <div class="product-info">
+                <p>Foot Wear</p>
+                <h4>Mens Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$290.35</span>
+                    <span class="original-price">$255.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+        <div class="products4">
+            <div class="productcat">Hot</div>
+            <img src="../Assets/product-4-1.jpg" alt="">
+            <div class="product-info">
+                <p>Plazoos</p>
+                <h4>Women Plazoo pants</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="price">
+                    <span class="current-price">$400.85</span>
+                    <span class="original-price">$250.8</span>
+                </div>
+            </div>
+            <div class="product-actions">
+                <button class="shopping-icon"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="hot-releases">
+        <div class="section-container">
+            <div class="section">
+                <h4>Hot Releases</h4>
+                <hr>
+                <div class="hot-item">
+                    <img src="../Assets/product-2-1.jpg" alt="Floral Print Casual Cotton Dress">
+                    <div class="hot-info">
+                        <p>Floral Print Casual Cotton Dress</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/category-4.jpg" alt="Ruffled Solid Long Sleeve Blouse">
+                    <div class="hot-info">
+                        <p>Head caps fashion for men</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/product-3-1.jpg" alt="Multi-Color Print V-neck T-shirt">
+                    <div class="hot-info">
+                        <p>Mens footwear shoes</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Deals & Outlet</h4>
+                <hr>
+                <div class="hot-item">
+                    <img src="../Assets/category-3.jpg" alt="Floral Print Casual Cotton Dress">
+                    <div class="hot-info">
+                        <p>Women slippers outwear</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/category-6.jpg" alt="Ruffled Solid Long Sleeve Blouse">
+                    <div class="hot-info">
+                        <p>Home Usages pillows</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/product-7-1.jpg" alt="Multi-Color Print V-neck T-shirt">
+                    <div class="hot-info">
+                        <p>Multi-Color Print V-neck T-shirt</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Trendy</h4>
+                <hr>
+                <div class="hot-item">
+                    <img src="../Assets/product-2-1.jpg" alt="Floral Print Casual Cotton Dress">
+                    <div class="hot-info">
+                        <p>Floral Print Casual Cotton Dress</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/category-4.jpg" alt="Ruffled Solid Long Sleeve Blouse">
+                    <div class="hot-info">
+                        <p>Ruffled Solid Long Sleeve Blouse</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/product-12-1.jpg" alt="Multi-Color Print V-neck T-shirt">
+                    <div class="hot-info">
+                        <p>Multi-Color Print V-neck T-shirt</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Top Selling</h4>
+                <hr>
+                <div class="hot-item">
+                    <img src="../Assets/product-6-1.jpg" alt="Floral Print Casual Cotton Dress">
+                    <div class="hot-info">
+                        <p>Floral Print Casual Cotton Dress</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/product-10-1.jpg" alt="Ruffled Solid Long Sleeve Blouse">
+                    <div class="hot-info">
+                        <p>Women footwears</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+                <div class="hot-item">
+                    <img src="../Assets/product-11-1.jpg" alt="Multi-Color Print V-neck T-shirt">
+                    <div class="hot-info">
+                        <p>ladies jeans</p>
+                        <span class="price">$238.85 <del>$245.8</del></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="newsletter">
-        <div>
+        <div class="mail">
             <i class="fa fa-envelope"></i>
-            <p>Sign in to Newsletter and receive $25 coupon for first shopping</p>
+        </div>
+        <div class="newsletter-content">
+            <p class="title">Sign up for our Newsletter</p>
+            <p class="description">...and receive a $25 coupon for your first purchase!</p>
         </div>
         <div class="subscribe">
             <input type="email" placeholder="Enter Your Email">
@@ -43,12 +606,13 @@
     <footer>
         <div class="footer-top">
             <div class="contact">
-                <h3>Contact</h3>
-                <p>Address: 13 Tlemcen Road, Street 32, Beb-Wahren</p>
-                <p>Phone: +01 2222 365 / (+91) 01 2345 6789</p>
-                <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+                <img src="https://lms.achieversit.com/assets/images/logo.png" alt="Achievers IT Logo">
+                <h4 class="font">Contact</h4>
+                <p><b>Address</b>:13 Tlemcen Road,Street 32,Beb-Wahren</p>
+                <p><b>Phone</b>: +01 2222 365/(+91)01 2345 6789</p>
+                <p><b>Hours</b>: 10:00 - 18:00,Mon - Sat</p>
+                <p class="font">Follow Me:</p>
                 <div class="social-icons">
-                    <p>Follow Me:</p>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -57,15 +621,16 @@
                 </div>
             </div>
             <div class="links">
-                <h3>Address</h3>
+                <h4>Address</h4>
                 <p>About Us</p>
                 <p>Delivery Information</p>
                 <p>Privacy Policy</p>
                 <p>Terms & Conditions</p>
                 <p>Contact Us</p>
+                <p>Support Us</p>
             </div>
             <div class="my-account">
-                <h3>My Account</h3>
+                <h4>My Account</h4>
                 <p>Sign In</p>
                 <p>View Cart</p>
                 <p>My Wishlist</p>
@@ -73,11 +638,17 @@
                 <p>Help</p>
             </div>
             <div class="payments">
-                <h3>Secured Payed Gateways</h3>
-                <img src="https://via.placeholder.com/150" alt="Payment Methods">
+                <h4>Secured Payed Gateways</h4>
+                <img src="https://www.braaiwooduk.com/wp-content/uploads/2017/01/payment-icons2.png"
+                    alt="Payment Methods">
             </div>
         </div>
-        <p>© 2025 Shalu. All right reserved</p>
+        <hr>
+        <div class="footer-rights">
+            <p>© 2025 Shalini. All rights reserved</p>
+            <p>Designed by Shalini</p>
+        </div>
     </footer>
 </body>
+
 </html>
