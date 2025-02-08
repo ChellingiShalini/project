@@ -20,7 +20,7 @@ header {
 }
 
 .logo img {
-    width: 120px;/
+    width: 120px;
 }
 
 nav ul {
@@ -932,4 +932,119 @@ footer {
     color: #666;
     font-size: 14px;
     padding: 20px 0px 10px;
+}
+@media (max-width: 768px) { 
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .searchbar {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Picture Section */
+    .picture {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .pic img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Product Grid */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* Product Cards */
+    .products-cards {
+        padding: 5px;
+    }
+
+    /* Sidebar */
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Compare Table */
+    .compare-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .compare-table th img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer */
+    .section-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) { 
+    /* Further adjustments for very small screens */
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .pic img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
