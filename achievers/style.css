@@ -5,11 +5,12 @@
 }
 
 body {
-
+    font-size: 1.5rem;
     font-family: Arial, sans-serif;
 }
 
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +21,7 @@ header {
 }
 
 .logo img {
-    width: 120px;
+    width: 180px;
 }
 
 nav ul {
@@ -33,86 +34,80 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .searchbar {
     display: flex;
     align-items: center;
     position: relative;
-    /* To position the icon inside the input */
     flex: 1;
-    /* Allow the search bar to take up remaining space */
     margin: 0 20px;
     max-width: 400px;
-    /* Limit the width of the search bar */
 }
 
 .searchbar input {
     width: 100%;
-    /* Full width inside the container */
     padding: 10px 35px 10px 10px;
-    /* Add padding for the search icon */
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .searchbar i {
     position: absolute;
     right: 10px;
-    /* Position the icon inside the input */
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .icons {
     display: flex;
-    /* Flexbox for horizontal alignment */
     gap: 15px;
-    /* Space between icons */
 }
 
 .icons i {
-    font-size: 20px;
+    font-size: 28px;
     color: #333;
     cursor: pointer;
 }
 
 .icon-container {
     position: relative;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
 .notification {
     position: absolute;
-    top: -5px;
+    top: -6px;
     right: -10px;
     background: green;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
-
 /* header closed*/
-/* section1
- image and text side by side*/
+
+/* section1 image and text side by side*/
 .picture {
     display: flex;
     justify-content: space-between;
     padding: 30px;
     align-items: center;
+    gap: 10px;
 }
 
 .matter {
     flex: 1;
+    font-size: 30px;
 }
 
 .matter h4,
@@ -123,13 +118,7 @@ nav ul li a {
 
 .matter h3 {
     color: #033503dd;
-    font-size: 25px;
 }
-
-.matter h4 {
-    font-size: 20px;
-}
-
 .matter h5 {
     margin-bottom: 15px;
 }
@@ -140,6 +129,9 @@ nav ul li a {
     padding: 6px;
     border: none;
     border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
 }
 
 .pic {
@@ -152,13 +144,14 @@ nav ul li a {
     max-width: 500px;
     height: auto;
 }
-
 /* section1 closed*/
+
 /* section arrivals */
 .arrows {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px 0px;
+    padding: 20px 30px 5px;
+    font-size: 30px;
 }
 
 .diff {
@@ -172,7 +165,7 @@ nav ul li a {
 }
 
 .buttons button {
-    padding: 3px;
+    padding: 5px;
     width: 20px;
     border-radius: 50%;
     border: 1px solid rgb(15, 159, 102);
@@ -183,9 +176,9 @@ nav ul li a {
 #h5 {
     color: #269833;
 }
-
 /* arrivals closed */
-/* categoriesstarts*/
+
+/* categories starts*/
 .popular {
     display: flex;
     gap: 10px;
@@ -193,6 +186,7 @@ nav ul li a {
 }
 
 .categories {
+    width: 100%;
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -203,14 +197,17 @@ nav ul li a {
 }
 
 .categories img {
+    flex-grow: 1;
     width: 100%;
-    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-
+.categories p{
+    font-size: 18px;
+}
 /* categories closed */
+
 /* features styles*/
 .styles {
     display: flex;
@@ -238,32 +235,35 @@ nav ul li a {
 }
 
 /* features cosed */
+
 /* text on image cards */
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 0 30px 10px;
+    width: 100%;
+    margin: auto;
 }
 
 .boxcard {
-    width: 50%;
+    width: 49%;
     position: relative;
 }
 
 .boxcard img {
     width: 100%;
-    height: 300px;
-    background-size: cover;
+    height: 400px;
+    object-fit: cover;
     background-position: center;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
 .date1 {
     position: absolute;
+    
     top: 50%;
     left: 48%;
     transform: translate(-50%, -50%);
@@ -275,24 +275,28 @@ nav ul li a {
 .date1 h4 {
     color: #2c6e49;
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .date1 p {
     color: #555;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .date1 h5 {
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.price {
+.date1 .price {
     font-size: 20px;
     color: #e63946;
 }
 
 .price del {
     color: #999;
+    font-size: 18px;
 }
 
 .timer {
@@ -328,11 +332,10 @@ nav ul li a {
 .shop1 {
     border: 1px solid green;
     border-radius: 3px;
-    width: 100px;
+    width: 140px;
     padding: 10px;
     margin: 10px 0;
 }
-
 /* text on image closes */
 .shop-top {
     font-size: 18px;
@@ -347,7 +350,7 @@ nav ul li a {
 /* products section  starts */
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     padding: 10px 30px 20px;
 }
@@ -366,9 +369,10 @@ nav ul li a {
 }
 
 .product-img {
+    flex-grow: 1;
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
     border-radius: 5px;
     z-index: 1;
@@ -422,7 +426,7 @@ nav ul li a {
     top: 15px;
     left: 15px;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     padding: 2px 10px;
     border-radius: 15px;
     z-index: 3;
@@ -479,6 +483,7 @@ nav ul li a {
 
 .rating i {
     color: #ffc107;
+    font-size: 18px;
   
 }
 
@@ -489,14 +494,14 @@ nav ul li a {
 .current-price {
     color: #28a745;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     
 }
 
 .original-price {
     text-decoration: line-through;
     color: #999;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 5px;
 }
 .product-actions {
@@ -509,14 +514,15 @@ nav ul li a {
 .shopping-icon {
     border-radius: 50%;
     border: none;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     background-color: gray;
     color: white;
     cursor: pointer;
-    font-size: 18px;
 }
-
+.shopping-icon i{
+    font-size: 25px;
+}
 .shopping-icon:hover {
     background-color: #173b1f;
 }
@@ -527,6 +533,7 @@ nav ul li a {
     display: flex;
     gap: 10px;
     padding: 10px 30px;
+   
 }
 
 .products4 {
@@ -536,11 +543,12 @@ nav ul li a {
     padding: 10px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .products4 img {
     width: 100%;
-    max-height: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -553,7 +561,7 @@ nav ul li a {
     padding: 2px 10px;
     background-color: #ff6347;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 15px;
 }
 
@@ -576,35 +584,44 @@ nav ul li a {
 .product-info p {
     color: #999;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
-.product-info h3 {
+.product-info h4 {
     margin: 10px 0;
-    color: #333;
+    color: black;
+    font-size: 20px;
 }
 
 /* products section closed */
 
 /* Wrapper to align all sections in one row */
+.hot-releases {
+   width: 100%;
+   padding: 30px;
+}
 .section-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 20px;
 }
 
 .section {
     flex-basis: calc(33.33% - 20px);
-    max-width: 400px;
+
 }
 
 .section h4 {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .section hr {
-    width: 250px;
-    height: 2px;
+    width: 100%;
+    max-width: 400px;
+    height: 3px;
     background-color: #aca9a9;
     border: none;
     margin: 5px 0 15px 0;
@@ -615,7 +632,7 @@ nav ul li a {
     content: "";
     display: block;
     width: 40px;
-    height: 2px;
+    height: 3px;
     background-color: green;
     position: absolute;
     top: 0;
@@ -630,22 +647,22 @@ nav ul li a {
 }
 
 .hot-item img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .hot-info p {
     margin: 0;
-    font-size: 12px;
+    font-size: 18px;
     color: #333;
 }
 
 .price {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-    color: #555;
+    color: black;
 }
 
 .del {
@@ -832,30 +849,31 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    max-width: 100%;
     width: 100%;
     flex-wrap: nowrap;
 }
 .newsletter .mail i {
-    font-size: 20px;
+    font-size: 40px;
 }
+
 .newsletter-content {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     white-space: nowrap;
 }
 
 .newsletter-content .title {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
-    margin-right: 10px;
-    color: #333;
+    margin-right: 12px;
+    color: black;
 }
 
 .newsletter-content .description {
-    font-size: 14px;
-    color: #555;
-    margin-right: 10px;
+    font-size: 18px;
+    color: #3e3d3d;
+    margin-right: 12px;
 }
 
 .subscribe {
@@ -863,20 +881,22 @@ form button:hover {
 }
 
 .newsletter button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .newsletter button:hover {
     background-color: #173b1f;
 }
 /* news content ends*/
+
 /* footer starts*/
 footer {
-    padding: 10px 30px;
+    padding: 20px 30px;
     font-family: Arial, sans-serif;
     border-top: 1px solid #ddd;
 }
@@ -885,54 +905,57 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1100px;
+    width: 100%;
     margin: auto;
-    font-size: 14px;
 }
+
 .font {
     color: #666;
 }
+
 .footer-top img {
-    width: 120px;
+    width: 150px;
 }
 
 .footer-top div {
-    width: 24%;
+    width: 20%;
 }
 
 .footer-top h4 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 24px;
 }
 
 .footer-top p {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-size: 20px;
 }
 
 .payments img {
-    width: 150px;
+    width: 200px;
+    max-width: 100%;
 }
 
 .social-icons {
     display: flex;
     padding: 5px;
-    gap: 10px;
+    gap: 15px;
 }
 
 .social-icons i {
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
-.payments img {
-    width: 150px;
-    max-width: 100%; 
-}
+
 .footer-rights {
     display: flex;
     justify-content: space-between;
     color: #666;
-    font-size: 14px;
-    padding: 20px 0px 10px;
+    font-size: 15px;
+    padding: 20px 0px 12px;
 }
+/* footer ends here*/
 @media (max-width: 768px) { 
     /* Header */
     header {
